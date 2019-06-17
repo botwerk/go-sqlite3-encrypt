@@ -50,10 +50,10 @@ int sqlite3_mmftsext_init(sqlite3 *db,
     if (rc != SQLITE_OK)
         goto bail;
 
-    // Register text cipher.
-    rc = sqlite3_register_mm_cipher(db, g_default_key);
-    if (rc != SQLITE_OK)
-        goto bail;
+//    // Register text cipher.
+//    rc = sqlite3_register_mm_cipher(db, g_default_key);
+//    if (rc != SQLITE_OK)
+//        goto bail;
 
     // Register utility functions.
     rc = sqlite3_register_mm_utils(db);
