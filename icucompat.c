@@ -36,8 +36,8 @@ static void *
 load_function(void *lib_handle, const char *func_name, const char *suffix)
 {
     char buf[128];
-    size_t len = strlcpy(buf, func_name, sizeof(buf));
-    strlcpy(buf + len, suffix, sizeof(buf) - len);
+    size_t len = strncpy(buf, func_name, sizeof(buf));
+    strncpy(buf + len, suffix, sizeof(buf) - len);
 
     return dlsym(lib_handle, buf);
 }
