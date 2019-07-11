@@ -230,7 +230,7 @@ const (
 )
 
 func init() {
-	sql.Register("sqlite3", &SQLiteDriver{})
+	sql.Register("sqlite3_crypto", &SQLiteDriver{})
 }
 
 // Version returns SQLite library version information.
