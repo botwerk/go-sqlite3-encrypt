@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	sql.Register("sqlite3", &SQLiteDriverMock{})
+	sql.Register("sqlite3_crypto", &SQLiteDriverMock{})
 }
 
 type SQLiteDriverMock struct{}
